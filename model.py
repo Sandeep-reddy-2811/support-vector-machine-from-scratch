@@ -121,6 +121,11 @@ def predict_labels(x, params):
     return predict_from_scores(scores)
     pass
 
-# Step 11 - accuracy_score (not yet solved)
-# TODO: implement
+# Step 11 - accuracy_score
+import numpy as np
+
+def accuracy_score(y_pred, y_true):
+    # TODO: return the fraction of positions where y_pred equals y_true.
+    return (y_pred == y_true).mean()
+    pass
 
