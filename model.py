@@ -19,8 +19,16 @@ def standardize_features(x):
     return z
     pass
 
-# Step 2 - initialize_parameters (not yet solved)
-# TODO: implement
+# Step 2 - initialize_parameters
+import numpy as np
+
+def initialize_parameters(n_features):
+    """Return a dict with 'w' of shape (n_features,) and scalar 'b'."""
+    # TODO: create starting weights and bias for a linear SVM
+    w = np.zeros(n_features, dtype=float)
+    b = 0.0
+    return {'w': w, 'b': b}
+    pass
 
 # Step 3 - compute_scores (not yet solved)
 # TODO: implement
